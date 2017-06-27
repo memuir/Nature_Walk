@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js">
+</script>
+
+</head>
+<body>
+<!-- Logs user in to fitbit and sets the following:
+	variables:
+	  userName - the user's fitbit display name
+	  userID - unique code for each user set by fitbit
+	  stepCount - total lifetime steps for the user
+	functions:
+	  authorize() - redirects to fitbit authentication if required
+	  getUserInfo() - set userName and userID
+	  getNewSteps() - set stepCount
+	  logout() - logs user out and redirects to fitbit login
+-->
+<canvas id= "canvas" width= "1024" height="576"  ></canvas>
+    
+    <script src= "lib/howler.min.js"></script>
+    <script src= "scripts/utilities.js"></script>
+    <script src= "scripts/APIcalls.js"></script>
+    <script src= "scripts/engine.js"></script>
+    <script src= "scripts/sprite.js"></script>
+    <script src= "scripts/sound.js"></script>
+    <script src= "scripts/background.js"></script>
+    <script src= "scripts/ButtonClass.js"></script>
+    <script src= "scripts/mousetracker.js"></script>
+    <script src= "scripts/screenman.js"></script>
+    <!---<script src= "scripts/localStorageFunctions.js"></script> -->
+    <script src= "scripts/loginFunctions.js"></script>
+    <script src= "scripts/spawner.js"></script>
+    <script src= "scripts/DataTracking.js"></script>
+    <script src= "scripts/userInterface.js"></script>
+    <script src= "scripts/controller.js"></script>
+    <script src= "scripts/queue.js"></script>
+    <script src= "scripts/popups.js"></script>
+    <script src= "scripts/EventTracking.js"></script>
+	<script src= "scripts/AchievTracking.js"></script>
+    <script src= "scripts/game.js"></script>
+
+
+
+	
+<!-- prints variables set by APIcalls.js to console -->
+<script>
+	console.log("user: " + userName);
+	console.log("user ID: " + userID);
+	console.log("steps: " + stepCount);
+</script>
+</body>
+</html>

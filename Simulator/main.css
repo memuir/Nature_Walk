@@ -1,0 +1,37 @@
+h2 {
+    margin: 0px;
+    text-align: center;
+}
+
+.params {
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 300px; 
+    height: 600px;
+    padding: 10px;
+    border: black 1px solid;
+}
+
+.sysParams {
+    color: black;
+    position: absolute;
+    left: 335px;
+    top: 10px;
+    width: 300px; 
+    height: 600px;
+    padding: 10px;
+    border: black 1px solid;
+}
+
+.results {
+    color: purple;
+    position: absolute;
+    left: 710px;
+    top: 10px;
+    width: 300px; 
+    height: 600px;
+    padding: 10px;
+    border: black 3px solid;
+}

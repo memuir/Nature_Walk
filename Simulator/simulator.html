@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature Walk Simulator</title>
+    <link id="stylesheet" rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- <canvas id="canvas" width= "1024" height="576"></canvas> -->
+    <!--
+    <script src= "scripts/utilities.js"></script>
+    <script src= "scripts/ButtonClass.js"></script>
+    <script src= "scripts/mousetracker.js"></script>
+    <script src= "scripts/DataTracking.js"></script>
+    <script src= "scripts/userInterface.js"></script>
+    <script src= "scripts/controller.js"></script>
+    <script src= "scripts/queue.js"></script>  -->
+    
+    <div class="params"> 
+        <h2>User Parameters</h2>
+        <strong>Animal Upgrade Priority</strong>
+        <div>0=Ignore, 1=High Priority, 4=Low Priority</div>
+        <div>Identical priorities are chosen at random.</div>
+        <span>Bird </span>
+        <input id="BirdPri" type="range" min="0" max="4" >
+        <span id="BirdPriVal"></span><br>
+        <span>Deer </span>
+        <input id="DeerPri" type="range" min="0" max="4">
+        <span id="DeerPriVal"></span><br>
+        <span>Frog </span>
+        <input id="FrogPri" type="range" min="0" max="4">
+        <span id="FrogPriVal"></span><br>
+        <span>Bunny </span>
+        <input id="BunnPri" type="range" min="0" max="4">
+        <span id="BunnPriVal"></span><br><br>
+        
+        <strong>Activity Level</strong>
+        <div>How many steps per day is the player walking?</div>
+        <span>Steps </span>
+        <input id="Activity" type="text"><br><br>
+        
+        <strong>Optimality Level</strong>
+        <div>How many times per day is the player logging in?</div>
+        <span>Logins </span>
+        <input id="Logins" type="text"><br><br>
+        
+        <strong>Engagement Level</strong>
+        <div>How many minutes per login is the player actively playing?</div>
+        <span>Minutes </span>
+        <input id="Engagement" type="text"><br><br>
+        
+        <strong>Retention Level</strong>
+        <div>How many days will the player continue to play?</div>
+        <span>Days </span>
+        <input id="Retention" type="text"><br><br>
+        <br><input type="button" id="Simulate" value="Results">
+    </div>
+    
+    <div class="sysParams">
+        <h2>System Parameters</h2>
+        <strong>Currencies</strong>
+        <div id="totalSteps">totalSteps </div>
+        <div id="totalTracks">totalTracks</div><br>
+        <strong>Times</strong>
+        <div id="totalLogins">totalLogins</div>
+        <div id="totalTimeOnline">totalTimeOnline</div><br>
+        <strong>Areas</strong>
+        <div id="highestArea">highestArea</div><br>
+        <strong>Animals</strong>
+        <div id="animalsCalled">animalsCalled</div>
+        <div id="animalLevels">animalLevels</div>
+        <div id="animalsLost">animalsLost</div><br>
+        <strong>Events</strong>
+        <div id="eventsPassed">eventsPassed</div>
+        <div id="eventsFailed">eventsFailed</div>
+        <div id="eventDistribution">eventDistribution</div>
+    </div>
+    
+    <div class="results">
+        <h2>Results</h2>
+        <strong>Currencies</strong>
+        <div id="totalSteps">totalSteps </div>
+        <div id="totalTracks">totalTracks</div><br>
+        <strong>Times</strong>
+        <div id="totalLogins">totalLogins</div>
+        <div id="totalTimeOnline">totalTimeOnline</div><br>
+        <strong>Areas</strong>
+        <div id="highestArea">highestArea</div><br>
+        <strong>Animals</strong>
+        <div id="animalsCalled">animalsCalled</div>
+        <div id="animalLevels">animalLevels</div>
+        <div id="animalsLost">animalsLost</div><br>
+        <strong>Events</strong>
+        <div id="eventsPassed">eventsPassed</div>
+        <div id="eventsFailed">eventsFailed</div>
+        <div id="eventDistribution">eventDistribution</div>
+    </div>
+    <script src= "../scripts/controller.js"></script>
+    <script src= "../scripts/DataTracking.js"></script>
+    <script src= "ui_manager.js"></script>
+    
+</body>
+</html>

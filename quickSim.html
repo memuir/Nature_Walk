@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  Multiplier: <input type="number" name="mul"><br>
+  Exponential: <input type="number" name="exp"><br><br>
+  Iterations: <input type="number" name="iter"><br><br>
+  <input type="button" onclick="myFunction()" value="Calculate">
+  <input type="button" onclick="resetti()" value="reset">
+</form>
+
+<p id="display"></p>
+
+<script>
+function myFunction() {
+    var frm = document.getElementById("frm1");
+    var mul = frm.elements[0].value;
+    var exp = frm.elements[1].value;
+    var iter = frm.elements[2].value;
+    
+    for(var i = 0; i < iter; i++){
+    	var lim = mul * i;
+    	for(var j = 0; j < i; j++){
+    		lim = Math.ceil(lim * exp);
+    	}
+    	document.getElementById("display").innerHTML += (i+1) + ":   " + lim + "<br>";
+    	
+    }
+    
+}
+
+function resetti(){
+	document.getElementById("display").innerHTML = "";
+	document.getElementById("frm1").reset();
+}
+</script>
+
+</body>
+</html>
